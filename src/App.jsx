@@ -14,17 +14,17 @@ function App() {
   const logingoogle = async () => {
     const data = await signInWithPopup(auth, new GoogleAuthProvider())
     console.log(data)
-    Navigate(`/Home/${data.user.email}`)
+    Navigate(`/assets/components/Home${data.user.email}`)
   }
   const loginfacebook = async () => {
     const data = await signInWithPopup(auth, new FacebookAuthProvider())
     console.log(data)
-    Navigate(`/Home/`)
+    Navigate(`/assets/components/Home`)
   }
   const loginGitHub = async () => {
     const data = await signInWithPopup(auth, new GithubAuthProvider())
     console.log(data)
-    Navigate(`/Home/`)
+    Navigate(`/assets/components/Home`)
   }
   return (
     <div className='container'>
