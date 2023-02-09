@@ -27,35 +27,41 @@ function App() {
     Navigate(`/assets/components/Home`)
   }
   return (
-    <div className='container'>
-      <div className='login-left'>
-        <div className="login-header">
-          <h1>Welcome To My Application</h1>
-          <p>Please Login To Use The Platfrom</p>
-        </div>
-        <form className='login-form'>
-          <div className="login-form-footer">
-            <a onClick={loginfacebook}>
-              <img width="30" src={facebookLogo} alt="" />Facebook Login
-            </a>
-            <a onClick={logingoogle}>
-              <img width="30" src={googleLogo} alt="" />Google Login
-            </a>
+    <div className='body'>
+      <div className='container'>
+        <div className='login-left'>
+          <div className="login-header">
+            <h1>Welcome To My Application</h1>
+            <p>Please Login To Use The Platfrom</p>
           </div>
+          <form className='login-form'>
+            <div className="login-form-footer">
+              <a onClick={loginfacebook}>
+                <img width="30" src={facebookLogo} alt="" />Facebook Login
+              </a>
+              <a onClick={logingoogle}>
+                <img width="30" src={googleLogo} alt="" />Google Login
+              </a>
+            </div>
 
-          <div className='login-form-footer'>
-            <a onClick={loginGitHub}>
-              <img width="30" src={gitLogo} alt="" />GitHub Login
-            </a>
-            <a href="/">
-              <img width="30" src={twitterLogo} alt="" />Twitter Login
-            </a></div>
-        </form>
-      </div>
-      <div className='login-right'>
-        <marquee behavior="" direction="">Login GitHub sama twitter masih error</marquee>
-        <p>- error GitHub gak masuk ke home</p>
-        <p>- twitter terkendala no saat singup twitter developer</p>
+            <div className='login-form-footer'>
+              <a onClick={loginGitHub}>
+                <img width="30" src={gitLogo} alt="" />GitHub Login
+              </a>
+              <a href="/">
+                <img width="30" src={twitterLogo} alt="" />Twitter Login
+              </a></div>
+          </form>
+        </div>
+        <div className='login-right'>
+          <ul>
+            <marquee behavior="" direction="">Daftar Error :)</marquee>
+            <li>- Login GitHub sama twitter masih error</li>
+            <li>- error GitHub gak masuk ke home</li>
+            <li>- twitter terkendala no saat singup twitter developer</li>
+            <li>- Habis login tidak ke halaman home yang ada navbarnya</li>
+          </ul>
+        </div>
       </div>
     </div>
   )
