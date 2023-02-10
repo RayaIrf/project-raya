@@ -95,9 +95,6 @@ align-items: center;
   }
 }
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
   .container {
     grid-template-columns: auto;
   }
